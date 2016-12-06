@@ -1,0 +1,29 @@
+﻿Build started 2016-12-05 23:42:06.
+     1>Project "D:\StarFighrt3D\StarFighrt3D\StarFighrt3D.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\StarFighrt3D\StarFighrt3D\gl\glew\include /ID:\StarFighrt3D\StarFighrt3D\gl\glm /ID:\StarFighrt3D\StarFighrt3D\gl\glfw\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\StarFighrt3D-Debug.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BoundingBox.cpp Engine.cpp StarFighrt3D.cpp World.cpp
+         World.cpp
+         Engine.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         StarFighrt3D.cpp
+         BoundingBox.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\StarFighrt3D\Build\StarFighrt3D-Debug.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\StarFighrt3D\StarFighrt3D\gl\glew\lib\Win32 /LIBPATH:D:\StarFighrt3D\StarFighrt3D\gl\glfw\lib opengl32.lib glew32s.lib glfw3.lib glfw3dll.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\StarFighrt3D\Build\StarFighrt3D-Debug.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\StarFighrt3D\Build\StarFighrt3D-Debug.lib" /MACHINE:X86 Debug\Actor.obj
+         Debug\ActorManager.obj
+         Debug\BoundingBox.obj
+         Debug\Engine.obj
+         Debug\EventManager.obj
+         Debug\StarFighrt3D.obj
+         Debug\stdafx.obj
+         Debug\World.obj
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+     1>glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\StarFighrt3D\Build\vc120.pdb'; linking object as if no debug info
+         StarFighrt3D.vcxproj -> D:\StarFighrt3D\Build\StarFighrt3D-Debug.exe
+     1>Done Building Project "D:\StarFighrt3D\StarFighrt3D\StarFighrt3D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.61
