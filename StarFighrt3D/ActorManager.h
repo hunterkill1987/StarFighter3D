@@ -8,7 +8,7 @@ private:
 
 	//TODO:: Remove PoolSize;
 	static ActorManager* Instance;
-
+	 
 	std::vector<Actor*> ActiveActor;
 
 	std::vector<Actor*> DeadActor;
@@ -25,6 +25,8 @@ public:
 
 	void Init();
 
+	void AddTemplate();
+ 
 	ActorManager();
 	~ActorManager();
 };

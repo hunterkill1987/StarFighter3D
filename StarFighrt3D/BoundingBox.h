@@ -1,7 +1,5 @@
 #pragma once
-#include "Actor.h"
-
-class Actor;
+#include "Engine.h"
 
 class BoundingBox
 {

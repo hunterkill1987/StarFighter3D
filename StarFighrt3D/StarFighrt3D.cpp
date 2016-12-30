@@ -18,6 +18,8 @@ int main()
 
 	World* GWorld = World::GetInstance();
 
+	bool bIsReady = false;
+
 	if (GWorld != nullptr && GEngine != nullptr)
 	{
 		GWorld->Init(GEngine);
@@ -28,8 +30,18 @@ int main()
 
 	while (!glfwWindowShouldClose(GEngine->window))
 	{
-		GEngine->Render();
-		
+		if (!bIsReady)
+		{
+			GEngine->GetEventManager()->  Update(GEngine->GetDeltaTime());
+			GWorld->Update(GEngine->GetDeltaTime());
+			bIsReady = true;
+		}
+
+		if (bIsReady)
+		{
+			GEngine->Render();
+			bIsReady = false;
+		}
 	}
 	
 	Engine::DeleteInstance();

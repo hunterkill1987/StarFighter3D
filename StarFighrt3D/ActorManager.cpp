@@ -12,6 +12,11 @@ ActorManager* ActorManager::GetInstance()
 	return Instance;
 }
 
+void ActorManager::AddTemplate()
+{
+
+}
+
 void ActorManager::DeleteInstance()
 {
 

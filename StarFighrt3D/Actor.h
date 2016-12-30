@@ -1,52 +1,13 @@
 #pragma once
 #include <vector>
-#include "Engine.h"
 #include "BoundingBox.h"
-
-class BoundingBox;
-//Mesh Class
-class Mesh
-{
-public:
-	Mesh(const char* AssetPath);
-	~Mesh(){};
-
-private:
-	
-	static const unsigned int BUFFERS = 4;
-
-	bool LoadAsset(const char* AssetPath);
-
-	void InitBuffer();
-
-	std::vector<glm::vec3> ActorVertics;
-	std::vector<glm::vec3>  ActorNormals;
-	std::vector<unsigned short>  ActorElements;
-	std::vector<unsigned short>  ActorElementsNormal;
-
-	GLuint VertexBuffer;
-	GLuint ElementsBuffer;
-
-	glm::vec3 MeshScale;
-
-	glm::vec3 Size;  
-	glm::vec3 Center;
-	unsigned int NumElements;
-
-public:
-
-	//Scale Mesh 
-	void SetScale(float Scale);
-	glm::vec3 GetScale();
-	std::vector<glm::vec3> GetVertics();
-
-	void DrawMesh();
-};
+#include "Mesh.h"
 
 class Actor 
 {
 private:
 
+	//const int id;
 	glm::vec3 Velocity;
 	glm::vec3 Position;
 	glm::vec3 Rotation;
